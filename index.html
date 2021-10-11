@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>FinGal</title>
+<meta name="referrer" content="same-origin">
+<meta name="viewport" content="width=960">
+<style>.anim{visibility:hidden}</style>
+<style>body{-webkit-text-size-adjust:none}@font-face{font-family:"Lato";src:url('css/Lato-Bold.woff2') format('woff2'),url('css/Lato-Bold.woff') format('woff');font-weight:700}@font-face{font-family:"Lato";src:url('css/Lato-Regular.woff2') format('woff2'),url('css/Lato-Regular.woff') format('woff');font-weight:400}body>div{font-size:0}p, span,h1,h2,h3,h4,h5,h6{margin:0;word-spacing:normal;word-wrap:break-word;-ms-word-wrap:break-word;pointer-events:auto}sup{font-size:inherit;vertical-align:baseline;position:relative;top:-0.4em}sub{font-size:inherit;vertical-align:baseline;position:relative;top:0.4em}ul{display:block;word-spacing:normal;word-wrap:break-word;list-style-type:none;padding:0;margin:0;-moz-padding-start:0;-khtml-padding-start:0;-webkit-padding-start:0;-o-padding-start:0;-padding-start:0;-webkit-margin-before:0;-webkit-margin-after:0}li{display:block}li p{-webkit-touch-callout:none;-webkit-user-select:none;-khtml-user-select:none;-moz-user-select:none;-ms-user-select:none;-o-user-select:none;user-select:none}form{display:inline-block}a{text-decoration:inherit;color:inherit;-webkit-tap-highlight-color:rgba(0,0,0,0)}textarea{resize:none}.shm-l{float:left;clear:left}.shm-r{float:right;clear:right}.whitespacefix{word-spacing:-1px}html{font-family:sans-serif;-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%}body{font-size:0;margin:0}audio,video{display:inline-block;vertical-align:baseline}audio:not([controls]){display:none;height:0}[hidden],template{display:none}a{background:0 0;outline:0}b,strong{font-weight:700}dfn{font-style:italic}h1,h2,h3,h4,h5,h6{font-size:1em;line-height:1;margin:0 0}img{border:0}svg:not(:root){overflow:hidden}button,input,optgroup,select,textarea{color:inherit;font:inherit;margin:0}button{overflow:visible}button,select{text-transform:none}button,html input[type=button],input[type=submit]{-webkit-appearance:button;cursor:pointer;box-sizing:border-box;white-space:normal}input[type=password],input[type=text],textarea{-webkit-appearance:none;appearance:none;box-sizing:border-box}button[disabled],html input[disabled]{cursor:default}button::-moz-focus-inner,input::-moz-focus-inner{border:0;padding:0}input{line-height:normal;border-radius:0}input[type=checkbox],input[type=radio]{box-sizing:border-box;padding:0}input[type=number]::-webkit-inner-spin-button,input[type=number]::-webkit-outer-spin-button{height:auto}input[type=search]{-webkit-appearance:textfield;-moz-box-sizing:content-box;-webkit-box-sizing:content-box;box-sizing:content-box}input[type=search]::-webkit-search-cancel-button,input[type=search]::-webkit-search-decoration{-webkit-appearance:none}textarea{overflow:auto;box-sizing:border-box;border-color:#ddd}optgroup{font-weight:700}table{border-collapse:collapse;border-spacing:0}td,th{padding:0}:-webkit-full-screen-ancestor:not(iframe){-webkit-clip-path:initial!important}
+.menu-content{cursor:pointer;position:relative}li{-webkit-tap-highlight-color:rgba(0,0,0,0)}
+#b{background-color:#fff}.v4{display:block;*display:block;zoom:1;vertical-align:top}.ps41{margin-top:52px;top:0;position:-webkit-sticky;position:-moz-sticky;position:-o-sticky;position:-ms-sticky;position:sticky}.s45{width:100%;min-width:960px;min-height:604px}.c37{z-index:36;pointer-events:none}.ps42{display:inline-block;width:0;height:0}.v5{display:inline-block;*display:inline;zoom:1;vertical-align:top}.ps43{position:relative;margin-top:0}.s46{width:100%;min-width:960px;min-height:122px}.c38{z-index:37;border:0;background-color:rgba(62,112,76,.65);behavior:url(js/PIE.htc);-pie-background:rgba(62,112,76,0.65);behavior:url(js/PIE.htc);-pie-background:rgba(62,112,76,0.65)}.ps44{position:relative;margin-top:16px}.s47{min-width:960px;width:960px;margin-left:auto;margin-right:auto}.ps45{position:relative;margin-left:70px;margin-top:0}.s48{min-width:884px;width:884px;min-height:104px}.ps46{position:relative;margin-left:0;margin-top:21px}.s49{min-width:368px;width:368px;min-height:83px}.c40{z-index:38;pointer-events:auto}.p5{padding-top:0;padding-bottom:0;text-align:center;text-indent:0;padding-right:0}.f18{font-family:"Helvetica Neue", sans-serif;font-size:30px;font-weight:700;font-style:normal;text-decoration:none;text-transform:none;color:#fff;background-color:initial;line-height:44px;letter-spacing:normal;text-shadow:none}.f19{font-family:Lato;font-size:30px;font-weight:700;font-style:normal;text-decoration:none;text-transform:none;color:#fff;background-color:initial;line-height:44px;letter-spacing:normal;text-shadow:none}.ps47{position:relative;margin-left:310px;margin-top:0}.s50{min-width:206px;width:206px;min-height:75px}.w2{line-height:0}.v6{display:inline-block;*display:inline;zoom:1;vertical-align:top;overflow:visible}.ps48{position:relative;margin-left:0;margin-top:0}.s51{min-width:206px;width:206px;min-height:49px;height:49px}.c41{z-index:39;pointer-events:auto}.v7{display:inline-block;*display:inline-block;zoom:1;vertical-align:top}.m{padding:0px 0px 0px 0px}.ml{outline:0}.mcv{display:inline-block}.s52{min-width:206px;width:206px;min-height:49px}.c42{pointer-events:none;border:0;background-color:transparent}.ps49{position:relative;margin-left:0;margin-top:10px}.s53{min-width:206px;width:206px;min-height:28px}.c43{pointer-events:auto}.f20{font-family:Lato;font-size:18px;font-weight:700;font-style:normal;text-decoration:none;text-transform:none;color:#fff;background-color:initial;line-height:24px;letter-spacing:normal;text-shadow:1px 1px 1px #808080}.ps50{position:relative;margin-left:27px;margin-top:-3px}.s54{min-width:152px;width:152px;min-height:29px;height:29px}.c44{z-index:40;pointer-events:auto}.s55{min-width:152px;width:152px;min-height:29px}.s56{min-width:152px;width:152px;min-height:28px}.ps51{position:relative;margin-top:308px}.ps52{position:relative;margin-left:142px;margin-top:0}.s57{min-width:671px;width:671px;min-height:174px}.s58{min-width:671px;width:671px;min-height:150px}.c45{z-index:41;border:0;-webkit-border-radius:19px;-moz-border-radius:19px;border-radius:19px;background-color:#87a48f;opacity:0.71}.ps53{position:relative;margin-left:28px;margin-top:-136px}.s59{min-width:631px;width:631px;min-height:160px}.c46{z-index:42;pointer-events:auto}.p6{padding-top:0;padding-bottom:0;text-align:left;padding-right:0;text-indent:0}.f21{font-family:"Helvetica Neue", sans-serif;font-size:30px;font-weight:700;font-style:normal;text-decoration:none;text-transform:none;color:#fff;background-color:initial;line-height:40px;letter-spacing:normal;text-shadow:1px 1px 1px #808080}.f22{font-family:Lato;font-size:30px;font-weight:700;font-style:normal;text-decoration:none;text-transform:none;color:#fff;background-color:initial;line-height:40px;letter-spacing:normal;text-shadow:1px 1px 1px #808080}.ps54{position:relative;margin-top:-656px}.s60{width:100%;min-width:960px;min-height:952px}.c47{z-index:1;pointer-events:none;border:0}.fx4{background-attachment:fixed;background-image:url(images/sales-960.jpg);background-color:#fff;background-repeat:no-repeat;background-position:50% 100%;background-size:contain;background-clip:padding-box}.menu-device{background-color:rgb(0,0,0);display:none}@media (-webkit-min-device-pixel-ratio:2), (min-resolution:192dpi) {.fx4{background-image:url(images/sales-960.jpg);background-attachment:fixed}}@media (min-width:960px) {.fx4{background-image:url(images/sales-960.jpg);background-attachment:fixed}}@media (min-width:960px) and (-webkit-min-device-pixel-ratio:2),(min-width:960px) and (min-resolution:192dpi) {.fx4{background-image:url(images/sales-960.jpg);background-attachment:fixed}}@media (min-width:1200px) {.fx4{background-image:url(images/sales-960.jpg);background-attachment:fixed}}@media (min-width:1600px) {.fx4{background-image:url(images/sales-960.jpg);background-attachment:fixed}}</style>
+<link as="style" onload="this.onload=null;this.rel='stylesheet'" rel="preload" href="css/site.20211011171108.css">
+<noscript><link rel="stylesheet" href="css/site.20211011171108.css"></noscript>
+<!--[if lte IE 7]>
+<link rel="stylesheet" href="css/site.20211011171108-lteIE7.css" type="text/css">
+<![endif]-->
+<!--[if lte IE 8]>
+<link rel="stylesheet" href="css/site.20211011171108-lteIE8.css" type="text/css">
+<![endif]-->
+<!--[if gte IE 9]>
+<link rel="stylesheet" href="css/site.20211011171108-gteIE9.css" type="text/css">
+<![endif]-->
+<script>!function(t){var e=!1;try{e=t.document.createElement("link").relList.supports("preload")}catch(t){}if(!e)for(var n=t.document.getElementsByTagName("link"),a=0;a<n.length;a++){var o=n[a];"preload"===o.rel&&"style"===o.getAttribute("as")&&function(t){function e(){if(!t.getAttribute("data-l")){t.setAttribute("data-l",!0),t.addEventListener?t.removeEventListener("load",e):t.attachEvent&&t.detachEvent("onload",e),t.setAttribute("onload",null),t.media="all";var n=window.location.hash;n.length>1&&setTimeout(function(){var t=document.querySelectorAll('[name="'+n.slice(1)+'"]')[0],e=0;if(t.offsetParent)do{e+=t.offsetTop}while(t=t.offsetParent);window.scrollTo(0,e)},100)}}t.addEventListener?t.addEventListener("load",e):t.attachEvent&&t.attachEvent("onload",e),setTimeout(function(){t.rel="stylesheet",t.media="nl x"}),setTimeout(e,3e3)}(o)}}(this);
+</script>
+</head>
+<body id="b">
+<div class="v4 ps41 s45 c37">
+<div class="ps42">
+</div>
+<div class="v5 ps43 s46 c38">
+<div class="ps44 v4 s47">
+<div class="v5 ps45 s48 c39">
+<div class="v5 ps46 s49 c40">
+<p class="p5 f18">&#x424;&#x418;&#x41d;&#x430;&#x43d;&#x441;&#x43e;&#x432;&#x430;&#x44f;<span class="f19"> </span>&#x413;&#x410;&#x41b;&#x430;&#x43a;&#x442;&#x438;&#x43a;&#x430;</p>
+</div>
+<div class="v5 ps47 s50 w2">
+<div class="v6 ps48 s51 c41">
+<ul class="menu-dropdown v7 ps48 s51 m" id="m2">
+<li class="v5 ps48 s51 mit">
+<a href="#" class="ml"><div class="menu-content mcv"><div class="v5 ps48 s52 c42"><div class="v5 ps49 s53 c43"><p class="p5 f20">+7(495)555 55 55</p></div></div></div></a>
+</li>
+</ul>
+</div>
+<div class="v6 ps50 s54 c44">
+<ul class="menu-dropdown v7 ps48 s54 m" id="m1">
+<li class="v5 ps48 s54 mit">
+<a href="#" class="ml"><div class="menu-content mcv"><div class="v5 ps48 s55 c42"><div class="v5 ps48 s56 c43"><p class="p5 f20">info@fingal.ru</p></div></div></div></a>
+</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="ps51 v4 s47">
+<div class="v5 ps52 s57 c39">
+<div class="v5 ps48 s57 w2">
+<div class="v5 ps48 s58 c45"></div>
+<div class="v5 ps53 s59 c46">
+<p class="p6 f21">&#x421;<span class="f22"> </span>&#x43d;&#x430;&#x43c;&#x438;<span class="f22"> </span>&#x432;&#x44b;<span class="f22"> </span>&#x43c;&#x43e;&#x436;&#x435;&#x442;&#x435;<span class="f22"> </span>&#x434;&#x430;&#x442;&#x44c; &#x432; &#x434;&#x43e;&#x43b;&#x433;<span class="f22"> </span>&#x434;&#x435;&#x43d;&#x44c;&#x433;&#x438;<span class="f22"> </span>&#x441;<span class="f22"> </span>&#x443;&#x432;&#x435;&#x440;&#x435;&#x43d;&#x43d;&#x43e;&#x441;&#x442;&#x44c;&#x44e;<span class="f22">, </span>&#x447;&#x442;&#x43e;<span class="f22"> </span>&#x43e;&#x43d;&#x438;<span class="f22"> </span>&#x431;&#x443;&#x434;&#x443;&#x442;<span class="f22"> </span>&#x432;&#x43e;&#x437;&#x432;&#x440;&#x430;&#x449;&#x435;&#x43d;&#x44b;<span class="f22"> </span>&#x432;&#x43e;&#x432;&#x440;&#x435;&#x43c;&#x44f;<span class="f22"> </span>&#x438;<span class="f22"> </span>&#x432;<span class="f22"> </span>&#x43f;&#x43e;&#x43b;&#x43d;&#x43e;&#x43c;<span class="f22"> </span>&#x43e;&#x431;&#x44a;&#x451;&#x43c;&#x435;!</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="fbk v5 ps54 s60 c47 fx4" data-fbk="fx4"></div>
+<div class="v ps s c">
+<div class="fbk v ps2 s2 c2 fx" data-fbk="fx">
+<div class="ps3 v2 s3">
+<div class="v ps4 s4 c3">
+<p class="p f">&#x417;&#x430;&#x43a;&#x43b;&#x44e;&#x447;&#x438;<span class="f2"> </span>&#x431;&#x435;&#x437;&#x43e;&#x43f;&#x430;&#x441;&#x43d;&#x443;&#x44e; &#x441;&#x434;&#x435;&#x43b;&#x43a;&#x443; &#x441; &#x437;&#x430;&#x451;&#x43c;&#x449;&#x438;&#x43a;&#x43e;&#x43c;!</p>
+</div>
+<div class="v ps5 s5 c4">
+<div class="v ps6 s6 c5">
+<p class="p2 f3">&#x421;&#x434;&#x435;&#x43b;&#x43a;&#x430; &#x431;&#x443;&#x434;&#x435;&#x442; &#x43d;&#x430;&#x434;&#x451;&#x436;&#x43d;&#x43e; &#x437;&#x430;&#x43f;&#x438;&#x441;&#x430;&#x43d;&#x430; &#x432; <span class="f4">&#x431;&#x43b;&#x43e;&#x43a;&#x447;&#x435;&#x439;&#x43d;</span> &#x441;&#x438;&#x441;&#x442;&#x435;&#x43c;&#x435;, &#x432; &#x432;&#x438;&#x434;&#x435; <span class="f4">&#x441;&#x43c;&#x430;&#x440;&#x442; &#x43a;&#x43e;&#x43d;&#x442;&#x440;&#x430;&#x43a;&#x442;&#x430;</span>, &#x447;&#x442;&#x43e; &#x43d;&#x430; &#x441;&#x435;&#x433;&#x43e;&#x434;&#x43d;&#x44f;&#x448;&#x43d;&#x438;&#x439; &#x434;&#x435;&#x43d;&#x44c; &#x44f;&#x432;&#x43b;&#x44f;&#x435;&#x442;&#x441;&#x44f; &#x441;&#x430;&#x43c;&#x44b;&#x43c; &#x43d;&#x430;&#x434;&#x435;&#x436;&#x43d;&#x44b;&#x43c; &#x441;&#x43f;&#x43e;&#x441;&#x43e;&#x431;&#x43e;&#x43c; &#x445;&#x440;&#x430;&#x43d;&#x435;&#x43d;&#x438;&#x44f; &#x438;&#x43d;&#x444;&#x43e;&#x440;&#x43c;&#x430;&#x446;&#x438;&#x438; &#x43e; &#x434;&#x435;&#x43d;&#x435;&#x436;&#x43d;&#x44b;&#x445; &#x442;&#x440;&#x430;&#x43d;&#x437;&#x430;&#x43a;&#x446;&#x438;&#x44f;&#x445;. <span class="f5">&#x41d;&#x438; &#x43e;&#x434;&#x43d;&#x430; &#x438;&#x437; &#x441;&#x43e;&#x432;&#x435;&#x440;&#x448;&#x435;&#x43d;&#x43d;&#x44b;&#x445; &#x442;&#x440;&#x430;&#x43d;&#x437;&#x430;&#x43a;&#x446;&#x438;&#x439; &#x43d;&#x435; &#x43c;&#x43e;&#x436;&#x435;&#x442; &#x431;&#x44b;&#x442;&#x44c; &#x43f;&#x43e;&#x442;&#x435;&#x440;&#x44f;&#x43d;&#x430;, &#x43f;&#x43e;&#x434;&#x434;&#x435;&#x43b;&#x430;&#x43d;&#x430; &#x438;&#x43b;&#x438; &#x441;&#x442;&#x451;&#x440;&#x442;&#x430;!</span></p>
+<p class="p2 f6"><br></p>
+<p class="p2 f3">&#x415;&#x441;&#x43b;&#x438; &#x434;&#x43e;&#x43b;&#x433; &#x43d;&#x435; &#x431;&#x443;&#x434;&#x435;&#x442; &#x432;&#x43e;&#x437;&#x432;&#x440;&#x430;&#x449;&#x451;&#x43d; &#x432; &#x441;&#x440;&#x43e;&#x43a; - &#x43e;&#x43d; &#x431;&#x443;&#x434;&#x435;&#x442; &#x43f;&#x435;&#x440;&#x435;&#x434;&#x430;&#x43d; &#x442;&#x440;&#x435;&#x442;&#x44c;&#x438;&#x43c; &#x43b;&#x438;&#x446;&#x430;&#x43c;. <span class="f3">&#x41c;&#x44b; &#x441;&#x43e;&#x442;&#x440;&#x443;&#x434;&#x43d;&#x438;&#x447;&#x430;&#x435;&#x43c; &#x442;&#x43e;&#x43b;&#x44c;&#x43a;&#x43e; &#x441; &#x43a;&#x440;&#x443;&#x43f;&#x43d;&#x44b;&#x43c;&#x438; &#x430;&#x433;&#x435;&#x43d;&#x442;&#x441;&#x442;&#x432;&#x430;&#x43c;&#x438; &#x43f;&#x43e; &#x443;&#x440;&#x435;&#x433;&#x443;&#x43b;&#x438;&#x440;&#x43e;&#x432;&#x430;&#x43d;&#x438;&#x44e; &#x438; &#x43f;&#x43e;&#x433;&#x430;&#x448;&#x435;&#x43d;&#x438;&#x44e; &#x437;&#x430;&#x434;&#x43e;&#x43b;&#x436;&#x435;&#x43d;&#x43d;&#x43e;&#x441;&#x442;&#x438;, &#x441;&#x43e;&#x431;&#x43b;&#x44e;&#x434;&#x430;&#x44e;&#x449;&#x438;&#x43c;&#x438; &#x438;&#x43d;&#x442;&#x435;&#x440;&#x435;&#x441;&#x44b; &#x438; &#x43f;&#x440;&#x430;&#x432;&#x430; &#x432;&#x441;&#x435;&#x445; &#x441;&#x442;&#x43e;&#x440;&#x43e;&#x43d; &#x432; &#x441;&#x43e;&#x43e;&#x442;&#x432;&#x435;&#x442;&#x441;&#x442;&#x432;&#x438;&#x438; &#x441; &#x437;&#x430;&#x43a;&#x43e;&#x43d;&#x43e;&#x434;&#x430;&#x442;&#x435;&#x43b;&#x44c;&#x441;&#x442;&#x432;&#x43e;&#x43c; &#x420;&#x43e;&#x441;&#x441;&#x438;&#x439;&#x441;&#x43a;&#x43e;&#x439; &#x424;&#x435;&#x434;&#x435;&#x440;&#x430;&#x446;&#x438;&#x438;.</span></p>
+</div>
+<div class="v ps7 s7 w">
+<div class="v ps6 s8 c6">
+<picture class="i2">
+<source srcset="images/sales-960.jpg 1x, images/sales-960.jpg 2x">
+<img src="images/sales-960.jpg" alt="" class="js i">
+</picture>
+</div>
+<div class="v ps8 s9 c7">
+<a href="#" class="f7 btn v3 s10">&#x417;&#x430;&#x43a;&#x43b;&#x44e;&#x447;&#x438;&#x442;&#x44c; &#x441;&#x434;&#x435;&#x43b;&#x43a;&#x443;</a>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="fbk v ps9 s11 c8 fx2" data-fbk="fx2"></div>
+<div class="fbk v ps10 s12 c9 fx" data-fbk="fx">
+<div class="ps11 v2 s3">
+<div class="v ps12 s13 c10">
+<p class="p f">&#x41a;&#x430;&#x43a;<span class="f2"> </span>&#x43c;&#x44b;<span class="f2"> </span>&#x440;&#x430;&#x431;&#x43e;&#x442;&#x430;&#x435;&#x43c;:</p>
+</div>
+<div class="v ps13 s14 c11">
+<picture class="i4 js10">
+<source data-srcset="images/sales-960.jpg 1x, images/sales-960.jpg 2x, images/sales-960.jpg 3x">
+<img data-src="images/sales-960.jpg" alt="Imagefilme" class="js2 anim bounceInUp i3">
+</picture>
+</div>
+<div class="v ps14 s15 c12">
+<h2 class="p3 f8">&#x417;&#x430;&#x43a;&#x43b;&#x44e;&#x447;&#x435;&#x43d;&#x438;&#x435;<span class="f9"> </span>&#x441;&#x434;&#x435;&#x43b;&#x43a;&#x438;</h2>
+<h3 class="p4 f10">&#x41a;&#x440;&#x435;&#x434;&#x438;&#x442;&#x43e;&#x440;<span class="f11"> </span>&#x437;&#x430;&#x43a;&#x43b;&#x44e;&#x447;&#x430;&#x435;&#x442;<span class="f11"> </span>&#x441;&#x434;&#x435;&#x43b;&#x43a;&#x443; &#x441; &#x437;&#x430;&#x451;&#x43c;&#x449;&#x438;&#x43a;&#x43e;&#x43c; &#x43d;&#x430; &#x43d;&#x430;&#x448;&#x435;&#x43c; &#x441;&#x430;&#x439;&#x442;&#x435;, &#x437;&#x430;&#x451;&#x43c;&#x449;&#x438;&#x43a; &#x43f;&#x440;&#x435;&#x434;&#x43e;&#x441;&#x442;&#x430;&#x432;&#x43b;&#x44f;&#x435;&#x442; &#x43f;&#x430;&#x441;&#x43f;&#x43e;&#x440;&#x442; &#x438; &#x43f;&#x43e;&#x434;&#x442;&#x432;&#x435;&#x440;&#x436;&#x434;&#x430;&#x435;&#x442;, &#x447;&#x442;&#x43e; &#x432;&#x437;&#x44f;&#x43b; &#x432; &#x434;&#x43e;&#x43b;&#x433; &#x43d;&#x435;&#x43a;&#x43e;&#x442;&#x43e;&#x440;&#x443;&#x44e; &#x441;&#x443;&#x43c;&#x43c;&#x443; &#x434;&#x435;&#x43d;&#x435;&#x433;, &#x43e;&#x431;&#x44f;&#x437;&#x443;&#x435;&#x442;&#x441;&#x44f; &#x43e;&#x442;&#x434;&#x430;&#x442;&#x44c; &#x435;&#x451; &#x43d;&#x435; &#x43f;&#x43e;&#x437;&#x434;&#x43d;&#x435;&#x435; &#x43e;&#x43f;&#x440;&#x435;&#x434;&#x435;&#x43b;&#x451;&#x43d;&#x43d;&#x43e;&#x439; &#x434;&#x430;&#x442;&#x44b; &#x438; &#x43f;&#x43e;&#x43d;&#x438;&#x43c;&#x430;&#x435;&#x442;, &#x447;&#x442;&#x43e; &#x432; &#x441;&#x43b;&#x443;&#x447;&#x430;&#x435; &#x43d;&#x435;&#x432;&#x44b;&#x43f;&#x43e;&#x43b;&#x43d;&#x435;&#x43d;&#x438;&#x44f; &#x441;&#x432;&#x43e;&#x438;&#x445; &#x43e;&#x431;&#x44f;&#x437;&#x430;&#x442;&#x435;&#x43b;&#x44c;&#x441;&#x442;&#x432; &#x435;&#x433;&#x43e; &#x434;&#x43e;&#x43b;&#x433; &#x431;&#x443;&#x434;&#x435;&#x442; &#x43f;&#x435;&#x440;&#x435;&#x434;&#x430;&#x43d; &#x43a;&#x43e;&#x43b;&#x43b;&#x435;&#x43a;&#x442;&#x43e;&#x440;&#x441;&#x43a;&#x43e;&#x43c;&#x443; &#x430;&#x433;&#x435;&#x43d;&#x442;&#x441;&#x442;&#x432;&#x443;.</h3>
+</div>
+<div class="v ps15 s16 c13">
+<picture class="i6 js11">
+<source data-srcset="images/sales-960.jpg 1x, images/sales-960.jpg 2x, images/sales-960.jpg 3x">
+<img data-src="images/sales-960.jpg" alt="Werbevideos und Produktfilme" class="js3 anim bounceInUp i5">
+</picture>
+</div>
+<div class="v ps16 s17 c14">
+<h2 class="p3 f8">&#x421;&#x43e;&#x445;&#x440;&#x430;&#x43d;&#x435;&#x43d;&#x438;&#x435;<span class="f9"> </span>&#x441;&#x434;&#x435;&#x43b;&#x43a;&#x438;<span class="f9"> </span>&#x432;<span class="f9"> </span>&#x431;&#x43b;&#x43e;&#x43a;&#x447;&#x435;&#x439;&#x43d;</h2>
+<h3 class="p4 f10">&#x421;&#x434;&#x435;&#x43b;&#x43a;&#x430;<span class="f11"> </span>&#x432;<span class="f11"> </span>&#x432;&#x438;&#x434;&#x435;<span class="f11"> </span>&#x441;&#x43c;&#x430;&#x440;&#x442;<span class="f11"> </span>&#x43a;&#x43e;&#x43d;&#x442;&#x440;&#x430;&#x43a;&#x442;&#x430;<span class="f11"> </span>&#x441;&#x43e;&#x445;&#x440;&#x430;&#x43d;&#x44f;&#x435;&#x442;&#x441;&#x44f;<span class="f11"> </span>&#x432;<span class="f11"> </span>&#x431;&#x43b;&#x43e;&#x43a;&#x447;&#x435;&#x439;&#x43d;<span class="f11">, </span>&#x442;&#x430;&#x43a;&#x43e;&#x439;<span class="f11"> </span>&#x441;&#x43f;&#x43e;&#x441;&#x43e;&#x431;<span class="f11"> </span>&#x441;&#x43e;&#x445;&#x440;&#x430;&#x43d;&#x435;&#x43d;&#x438;&#x44f;<span class="f11"> </span>&#x441;&#x434;&#x435;&#x43b;&#x43a;&#x438;<span class="f11"> </span>&#x44f;&#x432;&#x43b;&#x44f;&#x435;&#x442;&#x441;&#x44f;<span class="f11"> </span>&#x43d;&#x435;&#x43e;&#x43f;&#x440;&#x43e;&#x432;&#x435;&#x440;&#x436;&#x438;&#x43c;&#x44b;&#x43c;<span class="f11"> </span>&#x43f;&#x43e;&#x434;&#x442;&#x432;&#x435;&#x440;&#x436;&#x434;&#x435;&#x43d;&#x438;&#x435;&#x43c;<span class="f11"> </span>&#x441;&#x43e;&#x432;&#x435;&#x440;&#x448;&#x435;&#x43d;&#x438;&#x44f;<span class="f11"> </span>&#x434;&#x435;&#x43d;&#x435;&#x436;&#x43d;&#x43e;&#x439;<span class="f11"> </span>&#x442;&#x440;&#x430;&#x43d;&#x437;&#x430;&#x43a;&#x446;&#x438;&#x438;<span class="f11">, </span>&#x43a;&#x43e;&#x442;&#x43e;&#x440;&#x43e;&#x435;<span class="f11"> </span>&#x43d;&#x435;&#x432;&#x43e;&#x437;&#x43c;&#x43e;&#x436;&#x43d;&#x43e;<span class="f11"> </span>&#x43e;&#x441;&#x43f;&#x43e;&#x440;&#x438;&#x442;&#x44c;, &#x43f;&#x43e;&#x442;&#x435;&#x440;&#x44f;&#x442;&#x44c; &#x438;&#x43b;&#x438; &#x43f;&#x43e;&#x434;&#x434;&#x435;&#x43b;&#x430;&#x442;&#x44c;. &#x423;&#x441;&#x43b;&#x443;&#x433;&#x430; &#x44f;&#x432;&#x43b;&#x44f;&#x435;&#x442;&#x441;&#x44f; &#x431;&#x435;&#x441;&#x43f;&#x43b;&#x430;&#x442;&#x43d;&#x43e;&#x439; &#x43a;&#x430;&#x43a; &#x434;&#x43b;&#x44f; &#x437;&#x430;&#x451;&#x43c;&#x449;&#x438;&#x43a;&#x430;, &#x442;&#x430;&#x43a; &#x438; &#x434;&#x43b;&#x44f; &#x43a;&#x440;&#x435;&#x434;&#x438;&#x442;&#x43e;&#x440;&#x430;.</h3>
+</div>
+<div class="v ps17 s18 c15">
+<picture class="i8 js12">
+<source data-srcset="images/sales-960.jpg 1x, images/sales-960.jpg 2x, images/sales-960.jpg 3x">
+<img data-src="images/sales-960.jpg" alt="Immobilienfilme" class="js4 anim bounceInUp i7">
+</picture>
+</div>
+</div>
+</div>
+<div class="ps18 v2 s19">
+<div class="v ps19 s20 c16">
+<h2 class="p3 f8">&#x41f;&#x435;&#x440;&#x435;&#x434;&#x430;&#x447;&#x430;<span class="f9"> </span>&#x434;&#x43e;&#x43b;&#x433;&#x430;</h2>
+<h3 class="p4 f10">&#x415;&#x441;&#x43b;&#x438; &#x437;&#x430;&#x451;&#x43c;&#x449;&#x438;&#x43a; &#x43d;&#x435; &#x432;&#x43e;&#x437;&#x432;&#x440;&#x430;&#x449;&#x430;&#x435;&#x442; &#x434;&#x435;&#x43d;&#x44c;&#x433;&#x438; &#x432; &#x441;&#x43e;&#x433;&#x43b;&#x430;&#x441;&#x43e;&#x432;&#x430;&#x43d;&#x43d;&#x443;&#x44e; &#x434;&#x430;&#x442;&#x443;, &#x434;&#x43e;&#x43b;&#x433; &#x432;&#x44b;&#x43a;&#x443;&#x43f;&#x430;&#x435;&#x442;&#x441;&#x44f; &#x442;&#x440;&#x435;&#x442;&#x44c;&#x438;&#x43c;&#x438; &#x43b;&#x438;&#x446;&#x430;&#x43c;&#x438; - &#x43a;&#x440;&#x443;&#x43f;&#x43d;&#x44b;&#x43c;&#x438; &#x430;&#x433;&#x435;&#x43d;&#x442;&#x441;&#x442;&#x432;&#x430;&#x43c;&#x438; &#x43f;&#x43e; &#x443;&#x440;&#x435;&#x433;&#x443;&#x43b;&#x438;&#x440;&#x43e;&#x432;&#x430;&#x43d;&#x438;&#x44e; &#x438; &#x43f;&#x43e;&#x433;&#x430;&#x448;&#x435;&#x43d;&#x438;&#x44e; &#x437;&#x430;&#x434;&#x43e;&#x43b;&#x436;&#x435;&#x43d;&#x43d;&#x43e;&#x441;&#x442;&#x438;.</h3>
+<h3 class="p4 f10">&#x412;&#x441;&#x435; &#x430;&#x433;&#x435;&#x43d;&#x442;&#x441;&#x442;&#x432;&#x430;, &#x441; &#x43a;&#x43e;&#x442;&#x43e;&#x440;&#x44b;&#x43c;&#x438; &#x43c;&#x44b; &#x441;&#x43e;&#x442;&#x440;&#x443;&#x434;&#x43d;&#x438;&#x447;&#x430;&#x435;&#x43c;, &#x441;&#x43e;&#x431;&#x43b;&#x44e;&#x434;&#x430;&#x44e;&#x442; &#x438;&#x43d;&#x442;&#x435;&#x440;&#x435;&#x441;&#x44b; &#x438; &#x43f;&#x440;&#x430;&#x432;&#x430; &#x432;&#x441;&#x435;&#x445; &#x441;&#x442;&#x43e;&#x440;&#x43e;&#x43d; &#x432; &#x441;&#x43e;&#x43e;&#x442;&#x432;&#x435;&#x442;&#x441;&#x442;&#x432;&#x438;&#x438; &#x441; &#x437;&#x430;&#x43a;&#x43e;&#x43d;&#x43e;&#x434;&#x430;&#x442;&#x435;&#x43b;&#x44c;&#x441;&#x442;&#x432;&#x43e;&#x43c; &#x420;&#x43e;&#x441;&#x441;&#x438;&#x439;&#x441;&#x43a;&#x43e;&#x439; &#x424;&#x435;&#x434;&#x435;&#x440;&#x430;&#x446;&#x438;&#x438;.</h3>
+</div>
+</div>
+<div class="fbk v ps20 s21 c17 fx3" data-fbk="fx3">
+<div class="v ps21 s22 c18"></div>
+</div>
+<div class="ps22 v2 s19">
+<div class="v ps23 s23 c19">
+<p class="p f">&#x41e;&#x442;&#x437;&#x44b;&#x432;&#x44b;<span class="f2"> </span>&#x43d;&#x430;&#x448;&#x438;&#x445;<span class="f2"> </span>&#x43a;&#x43b;&#x438;&#x435;&#x43d;&#x442;&#x43e;&#x432;</p>
+</div>
+<div class="v ps24 s24 c4">
+<div class="v ps6 s25 c20">
+<picture class="i10">
+<source srcset="images/sales-960.jpg 1x, images/sales-960.jpg 2x, images/sales-960.jpg 3x">
+<img src="images/sales-960.jpg" alt="" class="js5 i9">
+</picture>
+</div>
+<div class="v ps25 s26 c21">
+<picture class="i12">
+<source srcset="images/sales-960.jpg 1x, images/sales-960.jpg 2x, images/sales-960.jpg 3x">
+<img src="images/sales-960.jpg" alt="" class="js6 i11">
+</picture>
+</div>
+</div>
+<div class="v ps14 s27 c4">
+<div class="v ps26 s28 c22">
+<p class="p2 f12">&#x415;&#x43b;&#x435;&#x43d;&#x430;, 28 &#x43b;&#x435;&#x442;</p>
+<p class="p2 f12">&#x41a;&#x43e;&#x43b;&#x43b;&#x435;&#x433;&#x430; &#x43f;&#x43e; &#x440;&#x430;&#x431;&#x43e;&#x442;&#x435; &#x440;&#x435;&#x433;&#x443;&#x43b;&#x44f;&#x440;&#x43d;&#x43e; &#x43f;&#x440;&#x43e;&#x441;&#x438;&#x43b;&#x430; &#x43c;&#x435;&#x43d;&#x44f; &#x43e;&#x434;&#x43e;&#x43b;&#x436;&#x438;&#x442;&#x44c; &#x43d;&#x435;&#x431;&#x43e;&#x43b;&#x44c;&#x448;&#x438;&#x435; &#x441;&#x443;&#x43c;&#x43c;&#x44b; &#x434;&#x435;&#x43d;&#x435;&#x433; &#x438; &#x437;&#x430;&#x431;&#x44b;&#x432;&#x430;&#x43b;&#x430; &#x432;&#x435;&#x440;&#x43d;&#x443;&#x442;&#x44c;. &#x41f;&#x440;&#x435;&#x434;&#x43b;&#x43e;&#x436;&#x438;&#x43b;&#x430; &#x435;&#x439; &#x43e;&#x444;&#x43e;&#x440;&#x43c;&#x438;&#x442;&#x44c; &#x441;&#x434;&#x435;&#x43b;&#x43a;&#x443; &#x447;&#x435;&#x440;&#x435;&#x437; &#x444;&#x438;&#x43d;&#x430;&#x43d;&#x441;&#x43e;&#x432;&#x443;&#x44e; &#x413;&#x430;&#x43b;&#x430;&#x43a;&#x442;&#x438;&#x43a;&#x443; - &#x438; &#x43a;&#x43e;&#x43b;&#x43b;&#x435;&#x433;&#x430; &#x432;&#x43e;&#x437;&#x432;&#x440;&#x430;&#x449;&#x430;&#x435;&#x442; &#x434;&#x435;&#x43d;&#x44c;&#x433;&#x438; &#x432;&#x43e;&#x432;&#x440;&#x435;&#x43c;&#x44f; &#x438; &#x431;&#x435;&#x437; &#x43d;&#x430;&#x43f;&#x43e;&#x43c;&#x438;&#x43d;&#x430;&#x43d;&#x438;&#x439;!</p>
+</div>
+<div class="v ps27 s29 c23">
+<p class="p2 f12">&#x410;&#x43b;&#x435;&#x43a;&#x441;&#x435;&#x439;, 26 &#x43b;&#x435;&#x442;</p>
+<p class="p2 f12">&#x412;&#x441;&#x435;&#x433;&#x434;&#x430; &#x43f;&#x43e;&#x43b;&#x44c;&#x437;&#x443;&#x44e;&#x441;&#x44c; &#x441;&#x435;&#x440;&#x432;&#x438;&#x441;&#x43e;&#x43c; &#x424;&#x438;&#x43d;&#x413;&#x430;&#x43b;, &#x43a;&#x43e;&#x433;&#x434;&#x430; &#x432; &#x434;&#x43e;&#x43b;&#x433; &#x43f;&#x440;&#x43e;&#x441;&#x438;&#x442; &#x43c;&#x430;&#x43b;&#x43e;&#x437;&#x43d;&#x430;&#x43a;&#x43e;&#x43c;&#x44b;&#x439; &#x447;&#x435;&#x43b;&#x43e;&#x432;&#x435;&#x43a;. &#x421;&#x435;&#x440;&#x432;&#x438;&#x441; &#x431;&#x435;&#x441;&#x43f;&#x43b;&#x430;&#x442;&#x43d;&#x44b;&#x439; &#x438; &#x44f;&#x432;&#x43b;&#x44f;&#x435;&#x442;&#x441;&#x44f; &#x433;&#x430;&#x440;&#x430;&#x43d;&#x442;&#x438;&#x435;&#x439; &#x442;&#x43e;&#x433;&#x43e;, &#x447;&#x442;&#x43e; &#x434;&#x435;&#x43d;&#x44c;&#x433;&#x438; &#x431;&#x443;&#x434;&#x443;&#x442; &#x43e;&#x431;&#x44f;&#x437;&#x430;&#x442;&#x435;&#x43b;&#x44c;&#x43d;&#x43e; &#x432;&#x43e;&#x437;&#x432;&#x440;&#x430;&#x449;&#x435;&#x43d;&#x44b;.</p>
+</div>
+</div>
+</div>
+<div class="v ps28 s30 c24">
+<div class="ps29 v2 s3">
+<div class="v ps30 s31 c4">
+<div class="v ps6 s32 w">
+<div class="v ps6 s33 c25">
+<p class="p2"><span class="f13">&#x41e;</span><span class="f14"> </span><span class="f13">&#x43d;&#x430;&#x441;</span></p>
+</div>
+<div class="v ps31 s34 c26">
+<p class="p2 f15">&#x41a;&#x43e;&#x43c;&#x43f;&#x430;&#x43d;&#x438;&#x44f;<span class="f16"> &laquo;</span>&#x424;&#x438;&#x43d;&#x430;&#x43d;&#x441;&#x43e;&#x432;&#x430;&#x44f;<span class="f16"> </span>&#x413;&#x430;&#x43b;&#x430;&#x43a;&#x442;&#x438;&#x43a;&#x430;<span class="f16">&raquo; </span>&#x43e;&#x441;&#x43d;&#x43e;&#x432;&#x430;&#x43d;&#x430; &#x432; 2021 &#x433;&#x43e;&#x434;&#x443;. &#x41d;&#x430;&#x448;&#x430; &#x43c;&#x438;&#x441;&#x441;&#x438;&#x44f; - &#x43f;&#x43e;&#x432;&#x44b;&#x448;&#x435;&#x43d;&#x438;&#x435; &#x432;&#x441;&#x435;&#x43e;&#x431;&#x449;&#x435;&#x439; &#x444;&#x438;&#x43d;&#x430;&#x43d;&#x441;&#x43e;&#x432;&#x43e;&#x439; &#x434;&#x438;&#x441;&#x446;&#x438;&#x43f;&#x43b;&#x438;&#x43d;&#x44b; &#x438; &#x43a;&#x43e;&#x43b;&#x43b;&#x435;&#x43a;&#x442;&#x438;&#x432;&#x43d;&#x43e;&#x439; &#x43f;&#x43e;&#x440;&#x44f;&#x434;&#x43e;&#x447;&#x43d;&#x43e;&#x441;&#x442;&#x438;.&nbsp;&nbsp;&#x41d;&#x430;&#x448; &#x441;&#x435;&#x440;&#x432;&#x438;&#x441; &#x43f;&#x440;&#x438;&#x437;&#x432;&#x430;&#x43d; &#x43f;&#x43e;&#x43c;&#x43e;&#x447;&#x44c; &#x437;&#x430;&#x451;&#x43c;&#x449;&#x438;&#x43a;&#x430;&#x43c; &#x431;&#x43e;&#x43b;&#x435;&#x435; &#x43e;&#x442;&#x432;&#x435;&#x442;&#x441;&#x442;&#x432;&#x435;&#x43d;&#x43d;&#x43e; &#x43e;&#x442;&#x43d;&#x43e;&#x441;&#x438;&#x442;&#x44c;&#x441;&#x44f; &#x43a; &#x441;&#x432;&#x43e;&#x438;&#x43c; &#x444;&#x438;&#x43d;&#x430;&#x43d;&#x441;&#x43e;&#x432;&#x44b;&#x43c; &#x43e;&#x431;&#x44f;&#x437;&#x430;&#x442;&#x435;&#x43b;&#x44c;&#x441;&#x442;&#x432;&#x430;&#x43c;, &#x430; &#x437;&#x430;&#x438;&#x43c;&#x43e;&#x434;&#x430;&#x442;&#x435;&#x43b;&#x438; &#x431;&#x443;&#x434;&#x443;&#x447;&#x438; &#x443;&#x432;&#x435;&#x440;&#x435;&#x43d;&#x43d;&#x44b;&#x43c;&#x438; &#x432; &#x432;&#x43e;&#x437;&#x432;&#x440;&#x430;&#x442;&#x435; &#x434;&#x43e;&#x43b;&#x433;&#x430;, &#x431;&#x443;&#x434;&#x443;&#x442; &#x43e;&#x445;&#x43e;&#x442;&#x43d;&#x435;&#x435; &#x43f;&#x43e;&#x43c;&#x43e;&#x433;&#x430;&#x442;&#x44c; &#x434;&#x440;&#x443;&#x433; &#x434;&#x440;&#x443;&#x433;&#x443;.</p>
+</div>
+</div>
+<div class="v ps32 s35 w">
+<div class="v ps6 s36 c27">
+<p class="p2 f13">&#x417;&#x430;&#x433;&#x440;&#x443;&#x437;&#x43a;&#x438;</p>
+</div>
+<div class="v ps33 s37 c28">
+<p class="p2 f15">&#x412; &#x43d;&#x430;&#x448;&#x435;&#x43c; &#x43f;&#x440;&#x438;&#x43b;&#x43e;&#x436;&#x435;&#x43d;&#x438;&#x438; &#x432;&#x44b; &#x442;&#x430;&#x43a; &#x436;&#x435; &#x43c;&#x43e;&#x436;&#x435;&#x442;&#x435; &#x43e;&#x446;&#x435;&#x43d;&#x438;&#x442;&#x44c; &#x432;&#x435;&#x440;&#x43e;&#x44f;&#x442;&#x43d;&#x43e;&#x441;&#x442;&#x44c; &#x432;&#x43e;&#x437;&#x432;&#x440;&#x430;&#x442;&#x430; &#x434;&#x43e;&#x43b;&#x433;&#x430;.</p>
+</div>
+<div class="v ps34 s38 c29">
+<a href="#" class="f17 btn2 v3 s39">&#x417;&#x430;&#x433;&#x440;&#x443;&#x437;&#x438;&#x442;&#x44c; &#x43f;&#x440;&#x438;&#x43b;&#x43e;&#x436;&#x435;&#x43d;&#x438;&#x435;</a>
+</div>
+<div class="v ps35 s40 c4">
+<div class="v ps6 s41 c30">
+<picture class="i14">
+<source srcset="images/sales-960.jpg 1x, images/sales-960.jpg 2x, images/sales-960.jpg 3x">
+<img src="images/sales-960.jpg" alt="" class="js7 i13">
+</picture>
+</div>
+<div class="v ps36 s41 c31">
+<picture class="i14">
+<source srcset="images/sales-960.jpg 1x, images/sales-960.jpg 2x, images/sales-960.jpg 3x">
+<img src="images/sales-960.jpg" alt="" class="js8 i13">
+</picture>
+</div>
+<div class="v ps36 s41 c32">
+<picture class="i14">
+<source srcset="images/sales-960.jpg 1x, images/sales-960.jpg 2x, images/sales-960.jpg 3x">
+<img src="images/sales-960.jpg" alt="" class="js9 i13">
+</picture>
+</div>
+</div>
+</div>
+<div class="v ps37 s42 w">
+<div class="v ps38 s43 c33">
+<p class="p2"><span class="f13">&#x422;&#x435;&#x445;&#x43d;&#x438;&#x447;&#x435;&#x441;&#x43a;&#x430;&#x44f;</span><span class="f14"> </span><span class="f13">&#x43f;&#x43e;&#x434;&#x434;&#x435;&#x440;&#x436;&#x43a;&#x430;</span></p>
+</div>
+<div class="v ps39 s37 c34">
+<p class="p2 f15">&#x41f;&#x43e; &#x432;&#x441;&#x435;&#x43c; &#x432;&#x43e;&#x43f;&#x440;&#x43e;&#x441;&#x430;&#x43c; &#x440;&#x430;&#x431;&#x43e;&#x442;&#x44b; &#x43d;&#x430;&#x448;&#x435;&#x433;&#x43e; &#x441;&#x435;&#x440;&#x432;&#x438;&#x441;&#x430; &#x432;&#x44b; &#x43c;&#x43e;&#x436;&#x435;&#x442;&#x435; &#x43e;&#x431;&#x440;&#x430;&#x442;&#x438;&#x442;&#x44c;&#x441;&#x44f; &#x432; &#x441;&#x43b;&#x443;&#x436;&#x431;&#x443; &#x442;&#x435;&#x445;&#x43d;&#x438;&#x447;&#x435;&#x441;&#x43a;&#x43e;&#x439; &#x43f;&#x43e;&#x434;&#x434;&#x435;&#x440;&#x436;&#x43a;&#x438; &#x43f;&#x43e; &#x442;&#x435;&#x43b;&#x435;&#x444;&#x43e;&#x43d;&#x443; +7(495) 555 55 56 &#x438;&#x43b;&#x438; &#x43d;&#x430;&#x43f;&#x438;&#x441;&#x430;&#x442;&#x44c; &#x43d;&#x430;&#x43c; &#x43f;&#x43e; &#x430;&#x434;&#x440;&#x435;&#x441;&#x443;:</p>
+<p class="p2 f15">tech@fingal.ru</p>
+</div>
+</div>
+</div>
+<div class="v ps40 s44 c35">
+<p class="p f16">Designed by Anna Ariupina</p>
+</div>
+</div>
+</div>
+<div class="c36">
+</div>
+<script>!function(){var s=["js/jquery.js","js/jqueryui.js","js/fixed.min.js","js/woolite.js","js/menu.js","js/menu-dropdown-animations.min.js","js/menu-dropdown.20211011171108.js","js/unveil.js","js/stickyfill.js","js/index.20211011171108.js"],n={},j=0,e=function(e){var o=new XMLHttpRequest;o.open("GET",s[e],!0),o.onload=function(){if(n[e]=o.responseText,10==++j)for(var t in s){var i=document.createElement("script");i.textContent=n[t],document.body.appendChild(i)}},o.send()};for(var o in s)e(o)}();
+</script>
+<script type="text/javascript">
+var ver=RegExp(/Mozilla\/5\.0 \(Linux; .; Android ([\d.]+)/).exec(navigator.userAgent);if(ver&&parseFloat(ver[1])<5){document.getElementsByTagName('body')[0].className+=' whitespacefix';}
+</script>
+</body>
+</html>
